@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Guru99 Banking Suite">
+
+    <parameter name="browser" value="chrome"/>
+
+    <listeners>
+        <listener class-name="reports.ExtentListener"/>
+    </listeners>
+
+    <test name="Banking Tests">
+
+        <classes>
+               <class name="testcases.LoginTest"/>
+              <class name="testcases.AddCustomerTest"/>\
+               <class name="testcases.NewAccountTest"/>
+                <class name="testcases.TransactionTest"/>
+            <class name="testcases.FundTransferTest"/>
+        </classes>
+
+    </test>
+
+</suite>
