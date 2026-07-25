@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Guru99_Banking_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Guru99 Banking Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Guru99_Banking_Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Guru99_Banking_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Guru99_Banking_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Guru99_Banking_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Guru99_Banking_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Guru99_Banking_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Guru99_Banking_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">21 methods, 1 failed,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Guru99_Banking_Suite" class="hide-methods failed suite-Guru99_Banking_Suite"> (hide)</a> <!-- hide-methods failed suite-Guru99_Banking_Suite -->
+                      <a href="#" panel-name="suite-Guru99_Banking_Suite" class="show-methods failed suite-Guru99_Banking_Suite"> (show)</a> <!-- show-methods failed suite-Guru99_Banking_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Guru99_Banking_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.TransactionTest" class="method navigator-link" hash-for-method="depositTest">depositTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Guru99_Banking_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Guru99_Banking_Suite" class="hide-methods passed suite-Guru99_Banking_Suite"> (hide)</a> <!-- hide-methods passed suite-Guru99_Banking_Suite -->
+                      <a href="#" panel-name="suite-Guru99_Banking_Suite" class="show-methods passed suite-Guru99_Banking_Suite"> (show)</a> <!-- show-methods passed suite-Guru99_Banking_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Guru99_Banking_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.AddCustomerTest" class="method navigator-link" hash-for-method="addValidCustomer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123)">addValidCustomer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.TransactionTest" class="method navigator-link" hash-for-method="balanceTest">balanceTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.AddCustomerTest" class="method navigator-link" hash-for-method="blankNameField">blankNameField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.AddCustomerTest" class="method navigator-link" hash-for-method="duplicateEmailValidation">duplicateEmailValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.AddCustomerTest" class="method navigator-link" hash-for-method="invalidPinFormat">invalidPinFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="loginTest(invalid123, wrong123, INVALID_BOTH)">loginTest(invalid123, wrong123, INVALID_BOTH)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="loginTest((blank), etEpEhU, BLANK_USER)">loginTest((blank), etEpEhU, BLANK_USER)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="loginTest(mngr662534, wrong123, INVALID_PASS)">loginTest(mngr662534, wrong123, INVALID_PASS)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="loginTest(mngr662534, (blank), BLANK_PASS)">loginTest(mngr662534, (blank), BLANK_PASS)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="loginTest(invalid123, etEpEhU, INVALID_USER)">loginTest(invalid123, etEpEhU, INVALID_USER)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="loginTest(mngr662534, etEpEhU, VALID)">loginTest(mngr662534, etEpEhU, VALID)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.NewAccountTest" class="method navigator-link" hash-for-method="newAccountTest(Savings, 50000, INVALID_CUSTOMER)">newAccountTest(Savings, 50000, INVALID_CUSTOMER)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.NewAccountTest" class="method navigator-link" hash-for-method="newAccountTest(Savings, , BLANK_DEPOSIT)">newAccountTest(Savings, , BLANK_DEPOSIT)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.NewAccountTest" class="method navigator-link" hash-for-method="newAccountTest(Current, 10000, CURRENT)">newAccountTest(Current, 10000, CURRENT)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.NewAccountTest" class="method navigator-link" hash-for-method="newAccountTest(Savings, 50000, SAVINGS)">newAccountTest(Savings, 50000, SAVINGS)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.FundTransferTest" class="method navigator-link" hash-for-method="validTransfer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123, 1000, Valid Transfer, VA...)">validTransfer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123, 1000, Valid Transfer, VA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.FundTransferTest" class="method navigator-link" hash-for-method="validTransfer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123, 500, Invalid Payee, INVA...)">validTransfer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123, 500, Invalid Payee, INVA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.FundTransferTest" class="method navigator-link" hash-for-method="validTransfer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123, 20000, Insufficient Bala...)">validTransfer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123, 20000, Insufficient Bala...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.AddCustomerTest" class="method navigator-link" hash-for-method="validateCustomerId">validateCustomerId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Guru99_Banking_Suite" title="testcases.TransactionTest" class="method navigator-link" hash-for-method="withdrawalTest">withdrawalTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Guru99_Banking_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Guru99_Banking_Suite" class="panel Guru99_Banking_Suite">
+          <div class="suite-Guru99_Banking_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TransactionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="depositTest">
+                  </a> <!-- depositTest -->
+                  <span class="method-name">depositTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: Guru99 returned HTTP 500
+	at testcases.TransactionTest.depositTest(TransactionTest.java:157)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC_TRANS_001 : Deposit)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru99_Banking_Suite-class-failed -->
+          <div class="suite-Guru99_Banking_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.AddCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addValidCustomer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123)">
+                  </a> <!-- addValidCustomer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123) -->
+                  <span class="method-name">addValidCustomer</span>
+                  <span class="parameters">(Ritik,01-01-1999,Indore MP,Indore,MP,458001,9876543210,Password@123)</span>
+                  <em>
+(TC_AC_01 : Add Valid Customer)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="blankNameField">
+                  </a> <!-- blankNameField -->
+                  <span class="method-name">blankNameField</span>
+                  <em>
+(TC_AC_03 : Blank Name Field)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="duplicateEmailValidation">
+                  </a> <!-- duplicateEmailValidation -->
+                  <span class="method-name">duplicateEmailValidation</span>
+                  <em>
+(TC_AC_05 : Duplicate Email Validation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidPinFormat">
+                  </a> <!-- invalidPinFormat -->
+                  <span class="method-name">invalidPinFormat</span>
+                  <em>
+(TC_AC_04 : Invalid PIN Format)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCustomerId">
+                  </a> <!-- validateCustomerId -->
+                  <span class="method-name">validateCustomerId</span>
+                  <em>
+(TC_AC_02 : Validate Customer ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru99_Banking_Suite-class-passed -->
+          <div class="suite-Guru99_Banking_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.FundTransferTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validTransfer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123, 1000, Valid Transfer, VA...)">
+                  </a> <!-- validTransfer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123, 1000, Valid Transfer, VA...) -->
+                  <span class="method-name">validTransfer</span>
+                  <span class="parameters">(Ritik,01-01-1999,Indore MP,Indore,MP,458001,9876543210,Password@123,1000,Valid Transfer,VALID)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validTransfer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123, 500, Invalid Payee, INVA...)">
+                  </a> <!-- validTransfer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123, 500, Invalid Payee, INVA...) -->
+                  <span class="method-name">validTransfer</span>
+                  <span class="parameters">(Ritik,01-01-1999,Indore MP,Indore,MP,458001,9876543210,Password@123,500,Invalid Payee,INVALID)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validTransfer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123, 20000, Insufficient Bala...)">
+                  </a> <!-- validTransfer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123, 20000, Insufficient Bala...) -->
+                  <span class="method-name">validTransfer</span>
+                  <span class="parameters">(Ritik,01-01-1999,Indore MP,Indore,MP,458001,9876543210,Password@123,20000,Insufficient Balance,INSUFFICIENT)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru99_Banking_Suite-class-passed -->
+          <div class="suite-Guru99_Banking_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(invalid123, wrong123, INVALID_BOTH)">
+                  </a> <!-- loginTest(invalid123, wrong123, INVALID_BOTH) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(invalid123,wrong123,INVALID_BOTH)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest((blank), etEpEhU, BLANK_USER)">
+                  </a> <!-- loginTest((blank), etEpEhU, BLANK_USER) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">((blank),etEpEhU,BLANK_USER)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(mngr662534, wrong123, INVALID_PASS)">
+                  </a> <!-- loginTest(mngr662534, wrong123, INVALID_PASS) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(mngr662534,wrong123,INVALID_PASS)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(mngr662534, (blank), BLANK_PASS)">
+                  </a> <!-- loginTest(mngr662534, (blank), BLANK_PASS) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(mngr662534,(blank),BLANK_PASS)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(invalid123, etEpEhU, INVALID_USER)">
+                  </a> <!-- loginTest(invalid123, etEpEhU, INVALID_USER) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(invalid123,etEpEhU,INVALID_USER)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(mngr662534, etEpEhU, VALID)">
+                  </a> <!-- loginTest(mngr662534, etEpEhU, VALID) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(mngr662534,etEpEhU,VALID)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru99_Banking_Suite-class-passed -->
+          <div class="suite-Guru99_Banking_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TransactionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="balanceTest">
+                  </a> <!-- balanceTest -->
+                  <span class="method-name">balanceTest</span>
+                  <em>
+(TC_TRANS_003 : Balance Enquiry)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="withdrawalTest">
+                  </a> <!-- withdrawalTest -->
+                  <span class="method-name">withdrawalTest</span>
+                  <em>
+(TC_TRANS_002 : Withdrawal)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru99_Banking_Suite-class-passed -->
+          <div class="suite-Guru99_Banking_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.NewAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="newAccountTest(Savings, 50000, INVALID_CUSTOMER)">
+                  </a> <!-- newAccountTest(Savings, 50000, INVALID_CUSTOMER) -->
+                  <span class="method-name">newAccountTest</span>
+                  <span class="parameters">(Savings,50000,INVALID_CUSTOMER)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="newAccountTest(Savings, , BLANK_DEPOSIT)">
+                  </a> <!-- newAccountTest(Savings, , BLANK_DEPOSIT) -->
+                  <span class="method-name">newAccountTest</span>
+                  <span class="parameters">(Savings,,BLANK_DEPOSIT)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="newAccountTest(Current, 10000, CURRENT)">
+                  </a> <!-- newAccountTest(Current, 10000, CURRENT) -->
+                  <span class="method-name">newAccountTest</span>
+                  <span class="parameters">(Current,10000,CURRENT)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="newAccountTest(Savings, 50000, SAVINGS)">
+                  </a> <!-- newAccountTest(Savings, 50000, SAVINGS) -->
+                  <span class="method-name">newAccountTest</span>
+                  <span class="parameters">(Savings,50000,SAVINGS)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru99_Banking_Suite-class-passed -->
+        </div> <!-- panel Guru99_Banking_Suite -->
+        <div panel-name="test-xml-Guru99_Banking_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/ritiksoni/Capstone_Guru99/Guru99BankFramework/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Guru99 Banking Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;reports.ExtentListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Banking Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.LoginTest&quot;/&gt;
+      &lt;class name=&quot;testcases.AddCustomerTest&quot;/&gt;
+      &lt;class name=&quot;testcases.NewAccountTest&quot;/&gt;
+      &lt;class name=&quot;testcases.TransactionTest&quot;/&gt;
+      &lt;class name=&quot;testcases.FundTransferTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Banking Tests --&gt;
+&lt;/suite&gt; &lt;!-- Guru99 Banking Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Guru99_Banking_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Guru99 Banking Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Banking Tests (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Guru99_Banking_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Guru99 Banking Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Guru99_Banking_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Guru99 Banking Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Guru99_Banking_Suite');
+function tableData_Guru99_Banking_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(21);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'depositTest')
+data.setCell(0, 2, 'testcases.TransactionTest')
+data.setCell(0, 3, 62125);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validTransfer')
+data.setCell(1, 2, 'testcases.FundTransferTest')
+data.setCell(1, 3, 61092);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addValidCustomer')
+data.setCell(2, 2, 'testcases.AddCustomerTest')
+data.setCell(2, 3, 32351);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validTransfer')
+data.setCell(3, 2, 'testcases.FundTransferTest')
+data.setCell(3, 3, 28108);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginTest')
+data.setCell(4, 2, 'testcases.LoginTest')
+data.setCell(4, 3, 20804);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validTransfer')
+data.setCell(5, 2, 'testcases.FundTransferTest')
+data.setCell(5, 3, 15763);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'newAccountTest')
+data.setCell(6, 2, 'testcases.NewAccountTest')
+data.setCell(6, 3, 6869);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'duplicateEmailValidation')
+data.setCell(7, 2, 'testcases.AddCustomerTest')
+data.setCell(7, 3, 6394);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'blankNameField')
+data.setCell(8, 2, 'testcases.AddCustomerTest')
+data.setCell(8, 3, 5409);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'balanceTest')
+data.setCell(9, 2, 'testcases.TransactionTest')
+data.setCell(9, 3, 5353);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'withdrawalTest')
+data.setCell(10, 2, 'testcases.TransactionTest')
+data.setCell(10, 3, 5138);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'newAccountTest')
+data.setCell(11, 2, 'testcases.NewAccountTest')
+data.setCell(11, 3, 5054);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'invalidPinFormat')
+data.setCell(12, 2, 'testcases.AddCustomerTest')
+data.setCell(12, 3, 4886);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'loginTest')
+data.setCell(13, 2, 'testcases.LoginTest')
+data.setCell(13, 3, 4161);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'loginTest')
+data.setCell(14, 2, 'testcases.LoginTest')
+data.setCell(14, 3, 4077);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'loginTest')
+data.setCell(15, 2, 'testcases.LoginTest')
+data.setCell(15, 3, 3647);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'newAccountTest')
+data.setCell(16, 2, 'testcases.NewAccountTest')
+data.setCell(16, 3, 3540);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'newAccountTest')
+data.setCell(17, 2, 'testcases.NewAccountTest')
+data.setCell(17, 3, 2975);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'loginTest')
+data.setCell(18, 2, 'testcases.LoginTest')
+data.setCell(18, 3, 2244);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'loginTest')
+data.setCell(19, 2, 'testcases.LoginTest')
+data.setCell(19, 3, 1452);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'validateCustomerId')
+data.setCell(20, 2, 'testcases.AddCustomerTest')
+data.setCell(20, 3, 4);
+window.suiteTableData['Guru99_Banking_Suite']= { tableData: data, tableDiv: 'times-div-Guru99_Banking_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-Guru99_Banking_Suite">
+              </div> <!-- times-div-Guru99_Banking_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Guru99_Banking_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Guru99 Banking Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Guru99_Banking_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Guru99_Banking_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setupModule</span>
+                <span class="method-start">10705 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">loginTest(mngr662534, etEpEhU, VALID)</span>
+                <span class="method-start">11691 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest(invalid123, etEpEhU, INVALID_USER)</span>
+                <span class="method-start">32531 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest(mngr662534, wrong123, INVALID_PASS)</span>
+                <span class="method-start">36186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest(invalid123, wrong123, INVALID_BOTH)</span>
+                <span class="method-start">40272 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest((blank), etEpEhU, BLANK_USER)</span>
+                <span class="method-start">44441 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest(mngr662534, (blank), BLANK_PASS)</span>
+                <span class="method-start">46691 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">endModule</span>
+                <span class="method-start">48154 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">48156 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.AddCustomerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">48374 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">startModule</span>
+                <span class="method-start">60030 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addValidCustomer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123)</span>
+                <span class="method-start">60240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateCustomerId</span>
+                <span class="method-start">92627 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">blankNameField</span>
+                <span class="method-start">92638 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidPinFormat</span>
+                <span class="method-start">98062 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">duplicateEmailValidation</span>
+                <span class="method-start">102966 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">endModule</span>
+                <span class="method-start">109387 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">109396 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.NewAccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">109652 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">startModule</span>
+                <span class="method-start">121445 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">newAccountTest(Savings, 50000, SAVINGS)</span>
+                <span class="method-start">153701 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">newAccountTest(Current, 10000, CURRENT)</span>
+                <span class="method-start">158769 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">newAccountTest(Savings, 50000, INVALID_CUSTOMER)</span>
+                <span class="method-start">165646 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">newAccountTest(Savings, , BLANK_DEPOSIT)</span>
+                <span class="method-start">168647 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">endModule</span>
+                <span class="method-start">172194 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">172197 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TransactionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">172457 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">startModule</span>
+                <span class="method-start">184113 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">depositTest</span>
+                <span class="method-start">184116 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">withdrawalTest</span>
+                <span class="method-start">246999 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">balanceTest</span>
+                <span class="method-start">252151 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">257513 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.FundTransferTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">257762 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">startModule</span>
+                <span class="method-start">268076 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validTransfer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123, 1000, Valid Transfer, VA...)</span>
+                <span class="method-start">268216 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validTransfer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123, 20000, Insufficient Bala...)</span>
+                <span class="method-start">329331 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validTransfer(Ritik, 01-01-1999, Indore MP, Indore, MP, 458001, 9876543210, Password@123, 500, Invalid Payee, INVA...)</span>
+                <span class="method-start">357457 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">endModule</span>
+                <span class="method-start">373245 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">373257 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

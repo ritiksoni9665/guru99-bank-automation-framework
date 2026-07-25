@@ -1,7 +1,4 @@
-/target/
-/test-output/
-.classpath
-.project
+/bin/
 .settings/
-*.log
-.DS_Store
+.project
+.classpath
